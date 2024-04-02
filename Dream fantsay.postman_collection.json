@@ -1,0 +1,339 @@
+{
+	"info": {
+		"_postman_id": "7a0790ce-f207-4f8c-a62d-ad032d2210fc",
+		"name": "Dream fantsay",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34000465"
+	},
+	"item": [
+		{
+			"name": "https://3d0d-2401-4900-5f27-9f53-4bc-af8d-b9b8-fb92.ngrok-free.app/generate-otp",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzA5NjM2NzcxLCJleHAiOjE3MDk2NDAzNzF9.uf2jLi7rqhd9877FN2egjBsxKeA1wEyZk1-kHPyROqI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mobileNumber\":\"+917869849719\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://3d0d-2401-4900-5f27-9f53-4bc-af8d-b9b8-fb92.ngrok-free.app/generate-otp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4200",
+					"path": [
+						"generate-otp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://3d0d-2401-4900-5f27-9f53-4bc-af8d-b9b8-fb92.ngrok-free.app/add-notification",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\":\"its your turn go and grap the offer for all matches\",\r\n  \"date\":\"12/2/2024\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://3d0d-2401-4900-5f27-9f53-4bc-af8d-b9b8-fb92.ngrok-free.app/add-notification",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4200",
+					"path": [
+						"add-notification"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://3d0d-2401-4900-5f27-9f53-4bc-af8d-b9b8-fb92.ngrok-free.app/get-notification",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://3d0d-2401-4900-5f27-9f53-4bc-af8d-b9b8-fb92.ngrok-free.app/get-notification",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4200",
+					"path": [
+						"get-notification"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://3d0d-2401-4900-5f27-9f53-4bc-af8d-b9b8-fb92.ngrok-free.app/verify-otp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"mobileNumber\":\"+918199818957\",\r\n  \"otp\":\"209585\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://3d0d-2401-4900-5f27-9f53-4bc-af8d-b9b8-fb92.ngrok-free.app/verify-otp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4200",
+					"path": [
+						"verify-otp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://3d0d-2401-4900-5f27-9f53-4bc-af8d-b9b8-fb92.ngrok-free.app/update-userprofile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mobile\":\"+918199818957\",\r\n    \"name\":\"deep\",\r\n    \"gender\":\"male\",\r\n    \"email\":\"guri@gmail.com\",\r\n    \"country\":\"india\",\r\n    \"state\":\"haryana\",\r\n    \"city\":\"sirsa\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://3d0d-2401-4900-5f27-9f53-4bc-af8d-b9b8-fb92.ngrok-free.app/update-userprofile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4200",
+					"path": [
+						"update-userprofile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://3d0d-2401-4900-5f27-9f53-4bc-af8d-b9b8-fb92.ngrok-free.app/add-cash",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"mobileNumber\":\"+918199818957\",\r\n  \"amount\":\"120000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://3d0d-2401-4900-5f27-9f53-4bc-af8d-b9b8-fb92.ngrok-free.app/add-cash",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4200",
+					"path": [
+						"add-cash"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://3d0d-2401-4900-5f27-9f53-4bc-af8d-b9b8-fb92.ngrok-free.app/withdraw-cash",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"mobileNumber\":\"+917869849719\",\r\n  \"amount\":\"1000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://3d0d-2401-4900-5f27-9f53-4bc-af8d-b9b8-fb92.ngrok-free.app/withdraw-cash",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4200",
+					"path": [
+						"withdraw-cash"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://3d0d-2401-4900-5f27-9f53-4bc-af8d-b9b8-fb92.ngrok-free.app/get-transactions",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"mobileNumber\":\"+918199818957\"\r\n  \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://3d0d-2401-4900-5f27-9f53-4bc-af8d-b9b8-fb92.ngrok-free.app/get-transactions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4200",
+					"path": [
+						"get-transactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://3d0d-2401-4900-5f27-9f53-4bc-af8d-b9b8-fb92.ngrok-free.app/get-userprofile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"mobileNumber\":\"+918199818957\"\r\n  \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://3d0d-2401-4900-5f27-9f53-4bc-af8d-b9b8-fb92.ngrok-free.app/get-userprofile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4200",
+					"path": [
+						"get-userprofile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://3d0d-2401-4900-5f27-9f53-4bc-af8d-b9b8-fb92.ngrok-free.app/create-Team",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"P1\":\"ROHIT\",  \"P2\":\"virat\",  \"P3\":\"dhoni\",  \"P4\":\"rina\",  \"P5\":\"vikram\",  \"P6\":\"preet\",  \"P7\":\"tiyagi\",  \"P8\":\"danial\",\r\n    \"P9\":\"roads\",  \"P10\":\"abd\",  \"P11\":\"bumra\",  \"Cap\":\"ROHIT\",\"vcap\":\"bhoni\",\"mobile\":\"+918199818957\",\r\n    \"teamname\":\"rsgv\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://3d0d-2401-4900-5f27-9f53-4bc-af8d-b9b8-fb92.ngrok-free.app/create-Team",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4200",
+					"path": [
+						"create-Team"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://3d0d-2401-4900-5f27-9f53-4bc-af8d-b9b8-fb92.ngrok-free.app/update-Team",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"P1\":\"surya\",  \"P2\":\"virat\",  \"P3\":\"dhoni\",  \"P4\":\"rina\",  \"P5\":\"vikram\",  \"P6\":\"preet\",  \"P7\":\"tiyagi\",  \"P8\":\"danial\",\r\n    \"P9\":\"roads\",  \"P10\":\"abd\",  \"P11\":\"bumra\",  \"Cap\":\"virat\",\"vcap\":\"bhoni\",\"mobile\":\"+918199818957\",\r\n    \"teamname\":\"kl\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://3d0d-2401-4900-5f27-9f53-4bc-af8d-b9b8-fb92.ngrok-free.app/update-Team",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4200",
+					"path": [
+						"update-Team"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://3d0d-2401-4900-5f27-9f53-4bc-af8d-b9b8-fb92.ngrok-free.app/delete-team/3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://3d0d-2401-4900-5f27-9f53-4bc-af8d-b9b8-fb92.ngrok-free.app/delete-team/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4200",
+					"path": [
+						"delete-team",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
